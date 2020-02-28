@@ -10,3 +10,9 @@ I haven't totally decided. This is an experiment for doing an arduino clock circ
 
 $ npm install
 $ node index.js
+
+getting arrow keys
+```
+process.stdin.setRawMode(true);
+process.stdin.on("data", (chunk) => console.log(JSON.stringify(chunk.toString())))
+```
